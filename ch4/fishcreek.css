@@ -1,0 +1,16 @@
+body {background-color : #FFFFFF; color : #003366; font-family : Verdana, Arial, sans-serif;}
+h1 {margin-bottom : 0;  background-repeat : no-repeat; background-position: center;  background-color : #003366; background-image : url(fishcreeklogo.gif); color : #F0F0F0; font-family : Georgia, "Times New Roman", serif; line-height : 250%; text-indent : 1dm; text-align :center;}
+nav {font-weight : bold; text-align : center; background-color : #5280C5; padding : 5px;}
+dt {color : #5280C5; font-size : 1.1em; font-weight : bold; font-family : Georgia, "Times New Roman", serif;}
+footer{font-size : .70em; text-align : center; background-color: #AEC3E3;}
+main {padding-left : 10px; padding-right : 10px;}
+footer nav {background-color : #F0F0F0;}
+img {border : 0; }
+
+
+
+.category {color : #5380C5 ; font-weight : bold; font-family : Georgia, "Times New Roman", serif; text-shadow : 1px 1px 1px #667;}
+#wrapper { margin-left : auto;
+			margin-right : auto;
+			min-width : 700px;
+			background-color : #F0F0F0;}
