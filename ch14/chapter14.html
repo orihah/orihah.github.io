@@ -1,0 +1,38 @@
+	<!DOCTYPE html>
+	<html lang="en">
+	<head>
+	<title>Chapter 14 Form Validation</title>
+	<meta charset="utf-8">
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js" ></script>
+	<script src="http://ajax.aspnetcdn.com/ajax/jquery.validate/1.11.0/jquery.validate.js"></script>
+	<script>
+		$(document).ready(function(){
+		$('form').validate();
+		});
+	</script>
+	<script>
+	function validateForm()
+		{
+			if (document.forms[0].myEmail.value == "")
+				{
+					alert("Please enter an e-mail address.");
+					return false;
+				} //end if
+			if (document.forms[0].myName.value == "")
+				{
+					alert("Please enter a Name.");
+					return false;
+				} //end if
+				return true;
+		}
+	</script>
+	</head>
+	<body>
+		<form action="http://www.markmurtha.com/csis128/readform.asp" method="post" onsubmit="return validateForm();">
+			Name: <input type="text" name="myName" id="myName">
+		<br>
+			E-Mail Address: <input type="text" name="myEmail" id="myEmail" class="required email">
+			<input id="mySubmit" type="submit" value="Sign Up Now" >
+		</form>
+
+	</body>
