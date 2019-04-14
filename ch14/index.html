@@ -5,6 +5,7 @@
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<link href="fishcreek.css" rel="stylesheet">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 	</head>
 	
 	<body>
@@ -39,6 +40,11 @@
 	<footer>
 		Copyright &copy 2018 Fish Creek Animal Clinic<br>
 		<a href="mailto:S1330291@student.mcckc.edu">Orihah Sage S1330291@student.mcckc.edu</a>
+		<div id="date"> 
+		<script>
+			$(document).ready(function() {$("#date").html("This page as last modified on: "  + document.lastModified)});
+		</script>
+		</div>
 	</footer>
 	<div id="wrapper">
 	</body>
