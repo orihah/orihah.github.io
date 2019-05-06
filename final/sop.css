@@ -2,11 +2,18 @@
 header { text-align: center;  height: 240px; font-size: 4em; letter-spacing: .3em; font-weight: bold; line-height: 350%; background-color: #7c1818; font-family : Luminari, Trattatello, fantasy;}
 #left {float: left;}
 #right {float: right;}
+#guild {height: 100%; width: 100%;  }
+#strat {height: 550px;}
+#strat a {font-size: 1.5em;}
+#charThumb:hover + #charPic{display: block;}
+#charPic {display: none; float: right;}
 
-main {padding-left : 2em; padding-right : 2em; margin-left: 200px; background-color: #FFFFFF; border: 1px solid #AEC3E3;}
+
+main {padding-left : 2em; padding-right : 2em; margin-left: 250px; background-color: #FFFFFF; border: 1px solid #AEC3E3;}
 body,html {height: 100%;}
 ul li{font-size: 2em;}
-nav {font-weight : bold; padding : 5px; float: left; width: 200px; background-color: #f4b942; height: auto; position: relative; height: 100%;}
+ul li p {font-size: 1em;}
+nav {font-weight : bold; padding : 5px; float: left; width: 250px; background-color: #f4b942; position: relative; height: 120%;}
 nav ul { list-style-type: none;}
 nav a { text-decoration: none}
 nav a:link{color: #000066}
@@ -19,9 +26,12 @@ table td {border: 1px solid #000000; width: 10em; height: 10em; vertical-align: 
 table td:nth-of-type(3){background-image: url(images/zuldazar.png); background-size: 100%; background-repeat: no-repeat; color: red;}
 table td:nth-of-type(4){background-image: url(images/zuldazar.png); background-size: 100%; background-repeat: no-repeat; color: red;}
 table td:nth-of-type(1){background-image: url(images/mythic.png); background-size: 100%; background-repeat: no-repeat; color: red;}
+label{display:block; text-align: center; width: 10em; padding-right:1m; }
+input {display:block; margin-bottom: 2em; width: 10em;  }
+select {display:block; margin-bottom: 2em; width: 10em;  }
+iframe {float: left;}
 
-
-footer{font-size : .70em; text-align : center; background-color: #7c1818; padding: 1em; margin-left: 200px; clear: left;}
+footer{font-size : .70em; text-align : center; background-color: #7c1818; padding: 1em; margin-left: 250px; clear: left;}
 header, nav, main, footer {display:block;}
 #wrapper { margin-left : auto;
 			margin-right : auto;

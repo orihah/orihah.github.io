@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Sons of Perdtion Home Page</title>
+<meta charset="utf-8">
+<link href="sop.css" rel="stylesheet">
+
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js" ></script>
+	<script src="http://ajax.aspnetcdn.com/ajax/jquery.validate/1.11.0/jquery.validate.js"></script>
+	<script>
+		$(document).ready(function(){
+		$('form').validate();
+		});
+	</script>
+	<script>
+	function validateForm()
+		{
+			if (document.forms[0].charRace.value == "" )
+				{
+					alert("Please select a Character Race.");
+					return false;
+				} 
+			if (document.forms[0].class.value == "")
+				{
+					alert("Please select a Class.");
+					return false;
+				} 
+				if (document.forms[0].currentProg.value == "" )
+				{
+					alert("Please select your current progression.");
+					return false;
+				} 
+				return true;
+		}
+	</script>
+</head>
+
+<body>
+
+
+<header>
+<img src="images/flag.png" height="240" width="240" alt="Guild Symbol" id="left">
+Sons of Perdition
+<img src="images/flag.png" height="240" width="240" alt="Guild Symbol" id="right">
+</header>
+
+<nav>
+		<ul>
+			<li><a href="index.html">Home</a></li>
+			<li><a href="calendar.html">Calendar</a></li> 
+			<li><a href="roster.html">Roster</a></li>
+			<li><a href="recruitment.html">Recruitment</a></li>
+			<li><a href="raidstrat.html">Strategies</a></li>
+			<li><a href="raidreq.html">Requirements</a></li>
+		</ul>
+</nav>
+
+<main>
+
+<h2>Apply to join Sons of Perdition</h2>
+<p>Sons of Perdition is a mythic raiding guild located on the server Zul'jin. We raid Tuesdays and Wednesdays, from 9pm to 1am Eastern Standard Time.
+	We expect raiders who are apart of the main mythic team to be able to make those times consistently.
+	We are currently 4/8 in your progression of Mythic Zuldazar.  Current minimum Ilvl for considertion for the mythic team is 405.
+	Please fill out the form below for consideration.
+</p>
+
+<form action="mailto:S1330291@student.mcckc.edu" method="get" onsubmit="return validateForm()";>
+<label for="charName">Character Name</label>
+<input type="text" name="charName" id="charName" required>
+<label for="server">Current Server<label>
+<input type="text" name="server" id="server" required>
+<label for="charRace">Character Race</label>
+<select name="charRace" id="charRace">
+	<option value=""></option>
+	<option value="Blood Elf">Blood Elf</option>
+	<option value="Goblin">Goblin</option>
+	<option value="Orc">Orc</option>
+	<option value="Pandaren">Pandaren</option>
+	<option value="Tauren">Tauren</option>
+	<option value="Troll">Troll</option>
+	<option value="Undead">Undead</option>
+	<option value="Nightborne">Nightborne</option>
+	<option value="High Mountain Tauren">High Mountain Tauren</option>
+	<option value="Mag'har Orc">Mag'har Orc</option>
+	<option value="Zandalari Troll">Zandalari Troll</option>
+</select>
+<label for="class">Class</label>
+<select name="class" id="class">
+	<option value=""></option>
+	<option value="Death Knight">Death Knight</option>
+	<option value="Demon Hunter">Demon Hunter</option>
+	<option value="Druid">Druid</option>
+	<option value="Hunter">Hunter</option>
+	<option value="Mage">Mage</option>
+	<option value="Monk">Monk</option>
+	<option value="Paladin">Paladin</option>
+	<option value="Priest">Priest</option>
+	<option value="Rogue">Rogue</option>
+	<option value="Shaman">Shaman</option>
+	<option value="Warlock">Warlock</option>
+	<option value="Warrior">Warrior</option>
+</select>
+<label for="spec">Specializations Played</label>
+<input type="text" name="spec" id="spec" required>
+<label for="ilvl">Current Ilvl</label>
+<input type="number" name="ilvl" id="ilvl" required>
+<label for="currentProg">Current Mythic Progression</label>
+<select name="currentProg" id="currentProg">
+	<option value=""></option>
+	<option value="0/8">0/8</option>
+	<option value="1/8">1/8</option>
+	<option value="2/8">2/8</option>
+	<option value="3/8">3/8</option>
+	<option value="4/8">4/8</option>
+	<option value="5/8">5/8</option>
+	<option value="6/8">6/8</option>
+	<option value="7/8">7/8</option>
+	<option value="8/8">8/8</option>
+</select>
+<label for="comments">Comments</label>
+<textarea name="comments" id="comments" cols="20" rows="4" ></textarea>>
+<input id="mySubmit" type="submit" value="Send Now" >
+</form>
+</main>
+
+<footer>
+		For more information please contact:<br>
+		<a href="mailto:S1330291@student.mcckc.edu">Orihah Sage S1330291@student.mcckc.edu</a>
+</footer>
+
+
+
+</body>
